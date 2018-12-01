@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textViewHeight">0dp</dimen>
+    <dimen name="standardDistance">8dp</dimen>
+    <dimen name="halfStandard">4dp</dimen>
+    <dimen name="DoubleStandard">16dp</dimen>
+    <dimen name="ActionSpacing">60dp</dimen>
+    <dimen name="StatusSpacing">32dp</dimen>
+</resources>

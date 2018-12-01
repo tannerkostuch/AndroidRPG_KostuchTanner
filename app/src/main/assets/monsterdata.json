@@ -1,0 +1,53 @@
+{
+  "monsters":[
+    {
+      "health": 10,
+      "attackDmg": 10,
+      "name": "Rat",
+      "weakness": "Magic",
+      "strength": "Dwarf",
+      "resistance": "None"
+    },
+    {
+      "health": 20,
+      "attackDmg": 15,
+      "name": "Dog",
+      "weakness": "Physical",
+      "strength": "Elf",
+      "resistance": "None"
+    },
+    {
+      "health": 50,
+      "attackDmg": 35,
+      "name": "Stone Gollem",
+      "weakness": "Magic",
+      "strength": "Dwarf",
+      "resistance": "Physical"
+    },
+    {
+      "health": 5,
+      "attackDmg": 5,
+      "name": "Bat",
+      "weakness": "None",
+      "strength": "None",
+      "resistance": "None"
+    },
+    {
+      "health": 100,
+      "attackDmg": 1,
+      "name": "Sentient Beetroot",
+      "weakness": "None",
+      "strength": "Human",
+      "resistance": "Physical"
+    },
+    {
+      "health": 500,
+      "attackDmg": 40,
+      "name": "Dragon",
+      "weakness": "Physical",
+      "strength": "Dwarf",
+      "resistance": "Magic"
+    }
+
+  ]
+}

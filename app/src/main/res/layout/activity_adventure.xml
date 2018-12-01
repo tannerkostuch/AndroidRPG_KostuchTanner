@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_adventure_default"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adventureActivity">
+
+    <TextView
+        android:id="@+id/health"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DoubleStandard"
+        android:layout_marginStart="@dimen/DoubleStandard"
+        android:layout_marginTop="@dimen/standardDistance"
+        android:text="@string/health_section"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textHealth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/standardDistance"
+        android:layout_marginStart="@dimen/standardDistance"
+        android:layout_marginTop="@dimen/standardDistance"
+        app:layout_constraintStart_toEndOf="@+id/health"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DoubleStandard"
+        android:layout_marginStart="@dimen/DoubleStandard"
+        android:layout_marginTop="@dimen/standardDistance"
+        android:text="@string/mana_section"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/health" />
+
+    <TextView
+        android:id="@+id/textMana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/standardDistance"
+        android:layout_marginStart="@dimen/standardDistance"
+        android:layout_marginTop="@dimen/standardDistance"
+        app:layout_constraintStart_toEndOf="@+id/mana"
+        app:layout_constraintTop_toBottomOf="@+id/textHealth" />
+
+    <TextView
+        android:id="@+id/actions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/standardDistance"
+        android:layout_marginLeft="@dimen/standardDistance"
+        android:layout_marginRight="@dimen/standardDistance"
+        android:layout_marginStart="@dimen/standardDistance"
+        android:layout_marginTop="@dimen/ActionSpacing"
+        android:text="@string/action_section"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mana" />
+
+    <Button
+        android:id="@+id/btnMelee"
+        android:onClick="handleMelee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/standardDistance"
+        android:layout_marginRight="@dimen/standardDistance"
+        android:layout_marginTop="@dimen/standardDistance"
+        android:text="@string/btnMeleeAttack"
+        app:layout_constraintEnd_toStartOf="@+id/actions"
+        app:layout_constraintTop_toBottomOf="@+id/actions" />
+
+    <Button
+        android:id="@+id/btnMgc"
+        android:onClick="handleMagic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/standardDistance"
+        android:layout_marginStart="@dimen/standardDistance"
+        android:layout_marginTop="@dimen/standardDistance"
+        android:text="@string/btnMagicAttack"
+        app:layout_constraintStart_toEndOf="@+id/actions"
+        app:layout_constraintTop_toBottomOf="@+id/actions" />
+
+    <Button
+        android:id="@+id/btnRun"
+        android:onClick="handleRun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/standardDistance"
+        android:layout_marginLeft="@dimen/standardDistance"
+        android:layout_marginRight="@dimen/standardDistance"
+        android:layout_marginStart="@dimen/standardDistance"
+        android:layout_marginTop="@dimen/standardDistance"
+        android:text="@string/btnRun"
+        app:layout_constraintEnd_toStartOf="@+id/actions"
+        app:layout_constraintStart_toStartOf="@+id/btnMelee"
+        app:layout_constraintTop_toBottomOf="@+id/btnMelee" />
+
+    <Button
+        android:id="@+id/btnRest"
+        android:onClick="handleRest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/standardDistance"
+        android:layout_marginLeft="@dimen/standardDistance"
+        android:layout_marginRight="@dimen/standardDistance"
+        android:layout_marginStart="@dimen/standardDistance"
+        android:layout_marginTop="@dimen/standardDistance"
+        android:text="@string/btnRest"
+        app:layout_constraintEnd_toEndOf="@+id/btnMgc"
+        app:layout_constraintStart_toEndOf="@+id/actions"
+        app:layout_constraintTop_toBottomOf="@+id/btnMgc" />
+
+    <CheckBox
+        android:id="@+id/cbSavageAttack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/standardDistance"
+        android:layout_marginEnd="@dimen/standardDistance"
+        android:layout_marginLeft="@dimen/halfStandard"
+        android:layout_marginRight="@dimen/standardDistance"
+        android:layout_marginStart="@dimen/halfStandard"
+        android:text="@string/cbSavageAttack"
+        app:layout_constraintBottom_toTopOf="@+id/btnMelee"
+        app:layout_constraintEnd_toEndOf="@+id/btnMelee"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/cbLifeTrans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/standardDistance"
+        android:layout_marginEnd="@dimen/standardDistance"
+        android:layout_marginLeft="@dimen/standardDistance"
+        android:layout_marginRight="@dimen/standardDistance"
+        android:layout_marginStart="@dimen/standardDistance"
+        android:text="@string/checkBoxLifeTranferance"
+        app:layout_constraintBottom_toTopOf="@+id/btnMgc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btnMgc" />
+
+    <TextView
+        android:id="@+id/monsterStatusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/standardDistance"
+        android:layout_marginStart="@dimen/standardDistance"
+        android:layout_marginTop="@dimen/StatusSpacing"
+        android:text="@string/monsterStatusText"
+        app:layout_constraintEnd_toEndOf="@+id/actions"
+        app:layout_constraintStart_toStartOf="@+id/actions"
+        app:layout_constraintTop_toBottomOf="@+id/btnRest" />
+
+    <TextView
+        android:id="@+id/textMonsterHealth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DoubleStandard"
+        android:layout_marginStart="@dimen/DoubleStandard"
+        android:layout_marginTop="@dimen/standardDistance"
+        android:text="@string/monster_health"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/monsterNameText" />
+
+    <TextView
+        android:id="@+id/monsterNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DoubleStandard"
+        android:layout_marginStart="@dimen/DoubleStandard"
+        android:layout_marginTop="@dimen/standardDistance"
+        android:text="@string/monsterNameText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/monsterStatusText" />
+
+    <TextView
+        android:id="@+id/monsterName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/standardDistance"
+        android:layout_marginStart="@dimen/standardDistance"
+        android:layout_marginTop="@dimen/standardDistance"
+        app:layout_constraintStart_toEndOf="@+id/monsterNameText"
+        app:layout_constraintTop_toBottomOf="@+id/monsterStatusText" />
+
+    <TextView
+        android:id="@+id/monsterHealth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/standardDistance"
+        android:layout_marginStart="@dimen/standardDistance"
+        android:layout_marginTop="@dimen/standardDistance"
+        app:layout_constraintStart_toEndOf="@+id/textMonsterHealth"
+        app:layout_constraintTop_toBottomOf="@+id/monsterNameText" />
+
+    <TextView
+        android:id="@+id/monsterAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/monsterActionText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMonsterHealth" />
+
+    <Button
+        android:id="@+id/menuBtn"
+        android:onClick="handleMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/DoubleStandard"
+        android:layout_marginLeft="@dimen/DoubleStandard"
+        android:layout_marginStart="@dimen/DoubleStandard"
+        android:text="@string/menuBtnText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

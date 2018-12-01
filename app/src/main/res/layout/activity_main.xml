@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/game_title"
+        android:textColor="@color/dark_red"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/name_text" />
+
+    <EditText
+        android:id="@+id/nameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/name_input_hint"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/classText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/class_text" />
+
+    <RadioGroup
+        android:id="@+id/classRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioBtnMage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/rbWarrior" />
+
+        <RadioButton
+            android:id="@+id/radioBtnWarrior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/rbMage" />
+
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/raceText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/race_text" />
+
+    <Spinner
+        android:id="@+id/raceSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/ageText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ageText" />
+
+    <SeekBar
+        android:id="@+id/seekBarAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/selectedAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/selectedAgeDefault" />
+
+    <ToggleButton
+        android:id="@+id/hardmodeToggle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/togglebuttonNull"
+        android:textOff="@string/hard_mode_deactivated"
+        android:textOn="@string/hard_mode_activated" />
+
+    <Button
+        android:id="@+id/beginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/beginBtnText"
+        android:onClick="submitClick"/>
+
+</LinearLayout>

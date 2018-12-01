@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">KostuchTanner_Project1</string>
+    <string name="game_title">Text Adventurer</string>
+    <string name="name_text">What will they call you?:</string>
+    <string name="name_input_hint">Enter Here</string>
+    <string name="rbWarrior">Warrior</string>
+    <string name="rbMage">Mage</string>
+    <string name="rbMarksmen">Marksmen</string>
+    <string name="class_text">You learned to fight as a...</string>
+    <string name="race_text">You were born as a...</string>
+    <string name="beginBtnText">Onwards!</string>
+    <string name="hard_mode_deactivated">Hard Mode Deactivated</string>
+    <string name="hard_mode_activated">Hard Mode Activated</string>
+    <string name="ageText">How many years have you been adventuring?</string>
+    <string name="togglebuttonNull">ToggleButton</string>
+    <string name="selectedAgeDefault">0</string>
+
+    <string-array name="races">
+        <item>Human</item>
+        <item>Elf</item>
+        <item>Dwarf</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="fragPor">Portrait</string>
+    <string name="fragLan">Landscape</string>
+    <string name="health_section">Health:</string>
+    <string name="mana_section">Mana:</string>
+    <string name="action_section">Actions:</string>
+    <string name="checkBoxLifeTranferance">Life Transferance</string>
+    <string name="cbSavageAttack">Savage Attack</string>
+    <string name="btnRest">Rest</string>
+    <string name="btnRun">Run Away</string>
+    <string name="btnMagicAttack">Magic Attack</string>
+    <string name="btnMeleeAttack">Melee Attack</string>
+    <string name="monsterStatusText">Monster Status:</string>
+    <string name="monsterNameText">Monster:</string>
+    <string name="monster_health">Monster Health:</string>
+    <string name="monsterActionText">Disturbing noises echo down the corridors.</string>
+    <string name="menuBtnText">Menu</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
